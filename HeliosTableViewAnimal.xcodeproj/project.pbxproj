@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E637A7451F204886003010D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A7441F204886003010D8 /* main.m */; };
+		E637A7481F204886003010D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A7471F204886003010D8 /* AppDelegate.m */; };
+		E637A74B1F204886003010D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A74A1F204886003010D8 /* ViewController.m */; };
+		E637A74E1F204886003010D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637A74C1F204886003010D8 /* Main.storyboard */; };
+		E637A7501F204886003010D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E637A74F1F204886003010D8 /* Assets.xcassets */; };
+		E637A7531F204886003010D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637A7511F204886003010D8 /* LaunchScreen.storyboard */; };
+		E637A75D1F204892003010D8 /* HeliosAnimationTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A75C1F204892003010D8 /* HeliosAnimationTableView.m */; };
+		E637A7601F204CE3003010D8 /* HeliosDomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A75F1F204CE3003010D8 /* HeliosDomeCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E637A7401F204886003010D8 /* HeliosTableViewAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeliosTableViewAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E637A7441F204886003010D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E637A7461F204886003010D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E637A7471F204886003010D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E637A7491F204886003010D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E637A74A1F204886003010D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E637A74D1F204886003010D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E637A74F1F204886003010D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E637A7521F204886003010D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E637A7541F204886003010D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E637A75B1F204892003010D8 /* HeliosAnimationTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeliosAnimationTableView.h; sourceTree = "<group>"; };
+		E637A75C1F204892003010D8 /* HeliosAnimationTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeliosAnimationTableView.m; sourceTree = "<group>"; };
+		E637A75E1F204CE3003010D8 /* HeliosDomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeliosDomeCell.h; sourceTree = "<group>"; };
+		E637A75F1F204CE3003010D8 /* HeliosDomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeliosDomeCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E637A73D1F204886003010D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E637A7371F204886003010D8 = {
+			isa = PBXGroup;
+			children = (
+				E637A7421F204886003010D8 /* HeliosTableViewAnimal */,
+				E637A7411F204886003010D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E637A7411F204886003010D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E637A7401F204886003010D8 /* HeliosTableViewAnimal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E637A7421F204886003010D8 /* HeliosTableViewAnimal */ = {
+			isa = PBXGroup;
+			children = (
+				E637A75A1F204892003010D8 /* tableViewAnimation */,
+				E637A7461F204886003010D8 /* AppDelegate.h */,
+				E637A7471F204886003010D8 /* AppDelegate.m */,
+				E637A7491F204886003010D8 /* ViewController.h */,
+				E637A74A1F204886003010D8 /* ViewController.m */,
+				E637A75E1F204CE3003010D8 /* HeliosDomeCell.h */,
+				E637A75F1F204CE3003010D8 /* HeliosDomeCell.m */,
+				E637A74C1F204886003010D8 /* Main.storyboard */,
+				E637A74F1F204886003010D8 /* Assets.xcassets */,
+				E637A7511F204886003010D8 /* LaunchScreen.storyboard */,
+				E637A7541F204886003010D8 /* Info.plist */,
+				E637A7431F204886003010D8 /* Supporting Files */,
+			);
+			path = HeliosTableViewAnimal;
+			sourceTree = "<group>";
+		};
+		E637A7431F204886003010D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E637A7441F204886003010D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E637A75A1F204892003010D8 /* tableViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E637A75B1F204892003010D8 /* HeliosAnimationTableView.h */,
+				E637A75C1F204892003010D8 /* HeliosAnimationTableView.m */,
+			);
+			path = tableViewAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E637A73F1F204886003010D8 /* HeliosTableViewAnimal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E637A7571F204886003010D8 /* Build configuration list for PBXNativeTarget "HeliosTableViewAnimal" */;
+			buildPhases = (
+				E637A73C1F204886003010D8 /* Sources */,
+				E637A73D1F204886003010D8 /* Frameworks */,
+				E637A73E1F204886003010D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeliosTableViewAnimal;
+			productName = HeliosTableViewAnimal;
+			productReference = E637A7401F204886003010D8 /* HeliosTableViewAnimal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E637A7381F204886003010D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "beyo-zhaoyf";
+				TargetAttributes = {
+					E637A73F1F204886003010D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E637A73B1F204886003010D8 /* Build configuration list for PBXProject "HeliosTableViewAnimal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E637A7371F204886003010D8;
+			productRefGroup = E637A7411F204886003010D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E637A73F1F204886003010D8 /* HeliosTableViewAnimal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E637A73E1F204886003010D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E637A7531F204886003010D8 /* LaunchScreen.storyboard in Resources */,
+				E637A7501F204886003010D8 /* Assets.xcassets in Resources */,
+				E637A74E1F204886003010D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E637A73C1F204886003010D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E637A75D1F204892003010D8 /* HeliosAnimationTableView.m in Sources */,
+				E637A7601F204CE3003010D8 /* HeliosDomeCell.m in Sources */,
+				E637A74B1F204886003010D8 /* ViewController.m in Sources */,
+				E637A7481F204886003010D8 /* AppDelegate.m in Sources */,
+				E637A7451F204886003010D8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E637A74C1F204886003010D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E637A74D1F204886003010D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E637A7511F204886003010D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E637A7521F204886003010D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E637A7551F204886003010D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E637A7561F204886003010D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E637A7581F204886003010D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HeliosTableViewAnimal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.beyo.www.HeliosTableViewAnimal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E637A7591F204886003010D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HeliosTableViewAnimal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.beyo.www.HeliosTableViewAnimal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E637A73B1F204886003010D8 /* Build configuration list for PBXProject "HeliosTableViewAnimal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637A7551F204886003010D8 /* Debug */,
+				E637A7561F204886003010D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E637A7571F204886003010D8 /* Build configuration list for PBXNativeTarget "HeliosTableViewAnimal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637A7581F204886003010D8 /* Debug */,
+				E637A7591F204886003010D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E637A7381F204886003010D8 /* Project object */;
+}

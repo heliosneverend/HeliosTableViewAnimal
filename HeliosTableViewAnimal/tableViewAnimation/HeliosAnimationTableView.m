@@ -1,0 +1,133 @@
+//
+//  HeliosAnimationTableView.m
+//  BYMatherAndBaby
+//
+//  Created by beyo-zhaoyf on 2017/5/25.
+//  Copyright © 2017年 MiaoZhi. All rights reserved.
+//
+
+#import "HeliosAnimationTableView.h"
+#import <QuartzCore/QuartzCore.h>
+#define AnimationDuration 0.8
+@interface HeliosAnimationTableView ()
+{
+    NSInteger _currentMaxDisplayedCell;
+}
+@end
+@implementation HeliosAnimationTableView
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _currentMaxDisplayedCell = 0;
+    }
+    return self;
+}
+
+
+- (void)customizeCell:(UITableViewCell *)cell
+{
+    CGFloat value = (90.0 * M_PI) / 180.0;
+    CATransform3D rotate = CATransform3DMakeRotation(value, 0.0, 0.7, 0.4);
+    rotate.m34 = 1.0 / -600;
+    cell.layer.shadowColor = [UIColor blackColor].CGColor;
+    cell.layer.shadowOffset = CGSizeMake(10, 10);
+    cell.alpha = 0;
+    cell.layer.transform = rotate;
+    cell.layer.anchorPoint = CGPointMake(0, 0.5);
+    
+    if(cell.layer.position.x != 0){
+        cell.layer.position = CGPointMake(0, cell.layer.position.y);
+    }
+    [UIView beginAnimations:@"rotate" context:nil];
+    [UIView setAnimationDuration:AnimationDuration];
+    cell.layer.transform = CATransform3DIdentity;
+    cell.alpha = 1;
+    cell.layer.shadowOffset = CGSizeMake(0, 0);
+    [UIView commitAnimations];
+}
+
+
+- (void)appearCell:(UITableViewCell *)cell andDirection:(Duration)direction andRow:(NSInteger)row
+{
+    
+    //    if (row <= _currentMaxDisplayedCell) {
+    //        return;
+    //    }
+    
+    NSInteger baseRows = ceilf(CGRectGetHeight(self.bounds) / self.rowHeight) - 1;
+    
+    CGFloat delay = row <= baseRows ? 0.05f * row : 0.01f;
+    
+    switch (direction) {
+        case directionRight: {
+            cell.layer.transform = CATransform3DMakeRotation(90.0f, 0, 1, 0);
+            cell.layer.anchorPoint = CGPointMake(1, 0.5);
+        }
+            break;
+        case directionLeft: {
+            cell.layer.transform = CATransform3DMakeRotation(-90.0f, 0, 1, 0);
+            cell.layer.anchorPoint = CGPointMake(0.0, 0.5);
+        }
+    }
+    cell.alpha = 0;
+
+    [UIView animateWithDuration:AnimationDuration
+                          delay:delay
+                        options:UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+                         //clear the transform
+                         cell.layer.transform = CATransform3DIdentity;
+                         cell.alpha = 1;
+                     } completion:nil];
+    _currentMaxDisplayedCell = row;
+}
+
+- (void)appearCell:(UITableViewCell *)cell andDirection:(Duration)direction
+{
+    
+    switch (direction) {
+        case directionRight: {
+            cell.layer.transform = CATransform3DMakeRotation(90.0f, 0, 1, 0);
+        }
+            break;
+        case directionLeft: {
+            cell.layer.transform = CATransform3DMakeRotation(-90.0f, 0, 1, 0);
+        }
+    }
+    cell.alpha = 0;
+    [UIView animateWithDuration:AnimationDuration
+                          delay:0.05
+                        options:UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+                         //clear the transform
+                         cell.layer.transform = CATransform3DIdentity;
+                         cell.alpha = 1;
+                     } completion:nil];
+}
+
+
+- (void)appearCell:(UITableViewCell *)cell andScale:(CGFloat)scale
+{
+    CATransform3D rotate = CATransform3DMakeScale(0, scale, scale);
+    cell.layer.shadowColor = [UIColor blackColor].CGColor;
+    cell.layer.shadowOffset = CGSizeMake(10, 10);
+    cell.alpha = 0;
+    cell.layer.transform = rotate;
+    [UIView beginAnimations:@"scale" context:nil];
+    [UIView setAnimationDuration:AnimationDuration];
+    cell.layer.transform = CATransform3DIdentity;
+    cell.alpha = 1;
+    cell.layer.shadowOffset = CGSizeMake(0, 0);
+    [UIView commitAnimations];
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+@end
